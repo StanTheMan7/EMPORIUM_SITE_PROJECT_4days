@@ -1,0 +1,84 @@
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    .services{
+        padding-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 95%;
+        color: white;
+        text-align: center;
+        .livingRoom{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 14rem;
+            width: 32%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../img/services/service-1.jpg);
+            .titleUnderline{
+                height: 0.2rem;
+                width: 70%;
+                background-color: white;
+            }
+        }
+        .saleItems{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 14rem;
+            width: 32%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../img/services/service-2.jpg);
+            .titleUnderline{
+                height: 0.2rem;
+                width: 70%;
+                background-color: white;
+            }
+        }
+        .clothes{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 14rem;
+            width: 32%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../img/services/slider-3.jpg);
+            .titleUnderline{
+                height: 0.2rem;
+                width: 70%;
+                background-color: white;
+            }
+        }
+    }
+    .recentProducts{
+        display: grid;
+        grid-template-columns: 35% 35% 40%;
+        div.card{
+            border: none;
+            .card-body{
+                border: none;
+
+            }
+        }
+        .crd-tshirt{
+            img{
+                height: 14.3rem;
+            }
+        }
+        .crd-shoe{
+            img{
+                height: 14.3rem;
+            }
+        }
+    }
+}
