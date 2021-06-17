@@ -1,0 +1,93 @@
+.section2{
+    padding-top: 5rem;
+
+    .discover{
+        height: 40rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../img/cta-bg.jpg);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            padding-bottom: 2.5rem;
+        }
+        button{
+            height: 2.5rem;
+            width: 8rem;
+            background-color: #DD4545;
+            border: none;
+            border-radius: 15px;
+            color: white;
+        }
+    }
+        h4{
+            padding-top: 4rem ;
+            padding-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+    .owl-carousel{
+        height: 60vh;
+        width: 43rem;
+        padding-bottom: 20rem;       
+        .card{
+            border: none;
+        }
+    }
+    .customers{
+        
+        
+        div{
+            height: 20rem ;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        display: flex;  
+        justify-content: space-evenly;
+        div.grey{
+            background-color: #F3F2F3;
+            i{
+                font-size: x-large;
+            }
+            button{
+                height: 2.3rem;
+                width: 7rem;
+                color: white;
+                background-color: #343A40;
+                font-size: 15px;
+                border-radius: 0.4rem;
+            }
+            p{
+                width: 80% ;
+            }
+        }
+        div.red{
+            background-color: #DD4545;
+            button{
+                height: 2.3rem;
+                width: 7rem;
+                background-color: #fff;
+                border: none;
+                font-size: 15px;
+                border-radius: 0.4rem;
+            }
+            i{
+                color:white  ;
+                font-size: x-large;
+            }
+            h5{
+                color: white;
+            }
+            p{ 
+                color: white;
+                width: 80% ;
+            }
+        }
+    }
+}

@@ -6,18 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 
 <body>
-    <header>
+    <header class="blur">
+
+        <div class="formulaire">
+            <div></div>
+            <img src="./public/img/logo.png" alt="">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <label for="">E-mail adresse</label>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </div>
         <!-- ----------------------------------------------------------------------- -->
         <!--!                                MA navBar                                -->
         <!-- ----------------------------------------------------------------------- -->
-        <nav>
+        <nav >
             <!-- todo  LOGO qui doit disparetre quand je srcoll down -->
 
-            <img src="./public/img/logo.png" alt="">
+            <div class="logo">
+                <img src="./public/img/logo.png" alt="">
+            </div>
 
             <!-- ? ------------------------------ mon menu ------------------------------- -->
             <!-- todo le metre en display flex enleve le style -->
@@ -62,21 +80,30 @@
     </header>
 
 
-    <section>
+    <section class="blur">
         <div class="services">
-            
-            <div class="livingRoom"><h3>Living Room</h3><div class="titleUnderline"></div></div>
 
-            
-            <div class="saleItems"><h3>Sale Items</h3><div class="titleUnderline"></div></div>
-            
-            <div class="clothes"><h3>Clothes</h3><div  class="titleUnderline"></div></div>
-            
+            <div class="livingRoom">
+                <h3>Living Room</h3>
+                <div class="titleUnderline"></div>
+            </div>
+
+
+            <div class="saleItems">
+                <h3>Sale Items</h3>
+                <div class="titleUnderline"></div>
+            </div>
+
+            <div class="clothes">
+                <h3>Clothes</h3>
+                <div class="titleUnderline"></div>
+            </div>
+
         </div>
 
         <!-- card-1 -->
 
-        <h1>Recent Products</h1>
+        <h3 class="rp">Recent Products</h3>
         <div class="recentProducts">
             <div class="card" style="width: 18rem;">
                 <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="card-img-top" alt="...">
@@ -90,11 +117,11 @@
 
             <div class="card" style="width: 18rem;">
                 <img src="./public/img/products_mini/product-gloves.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-bodyS">
                     <button>sale!</button>
                     <div>
                         <h5 class="card-title">Leather Gloves</h5>
-                        <p><span>$34.00</span>$27.00</p>
+                        <p><span>$34.00</span> $27.00</p>
                     </div>
                 </div>
             </div>
@@ -113,11 +140,11 @@
 
             <div class="card" style="width: 18rem;">
                 <img src="./public/img/products/product-bag-700x500.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-bodyS">
                     <button>sale!</button>
                     <div>
                         <h5 class="card-title">Womens Bag</h5>
-                        <p><span>$420.00</span>$350.00</p>
+                        <p><span>$420.00</span>    $350.00</p>
                     </div>
                 </div>
             </div>
@@ -167,107 +194,229 @@
             <div class="card crd-shoe" style="width: 18rem;">
                 <img src="./public/img/products/product-shoes-700x500.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                        <h5 class="card-title">Minimal Shoes</h5>
-                        <p>$60.00</p>
+                    <h5 class="card-title">Minimal Shoes</h5>
+                    <p>$60.00</p>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="section2 blur">
 
-        <div class="Discover">
-            <h3>Discover Thousands Of Great Products</h3>
+        <div class="discover">
+            <h1>Discover Thousands Of Great Products</h1>
             <button>LEARN MORE</button>
         </div>
 
 
-        <div class="carousel">
+        <h4>Hot Fashion Products</h4>
 
-            <h4>Hot Fashion Products</h4>
-            <!-- ------------------------------- card-1 -------------------------------- -->
-            <div class="card" style="width : 18rem;">
+        <div class="owl-carousel owl-theme">
+
+            <div class="card" style="width : 13rem;">
                 <div class="card-body">
-                    <img src="./public/img/products_mini/product-bag.jpg" class="card-img-top">
-                    <h5 class="card-title">Bag Product</h5>
-                    <p class="card-text">$600.00</p>
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-bag.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
                 </div>
             </div>
-            <!-- ------------------------------- card-2 -------------------------------- -->
-            <div class="card" style="width : 18rem;">
+
+            <div class="card" style="width : 13rem;">
                 <div class="card-body">
-                    <img src="./public/img/products_mini/product-bed.jpg" class="card-img-top">
-                    <h5 class="card-title">Bed Product</h5>
-                    <p class="card-text">$600.00</p>
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-bed.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
                 </div>
             </div>
-            <!-- ------------------------------- card-3 -------------------------------- -->
-            <div class="card" style="width : 18rem;">
+
+            <div class="card" style="width : 13rem;">
                 <div class="card-body">
-                    <img src="./public/img/products_mini/product-cups.jpg" class="card-img-top">
-                    <h5 class="card-title">Product Cups</h5>
-                    <p class="card-text">$600.00</p>
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-cups.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
                 </div>
             </div>
-            <!-- ------------------------------- card-4 -------------------------------- -->
-            <div class="card" style="width : 18rem;">
+
+            <div class="card" style="width : 13rem;">
                 <div class="card-body">
-                    <img src="./public/img/products_mini/product-gloves.jpg" class="card-img-top">
-                    <h5 class="card-title">Product Gloves</h5>
-                    <p class="card-text">$600.00</p>
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-gloves.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
                 </div>
             </div>
-            <!-- ------------------------------- card-5 -------------------------------- -->
-            <div class="card" style="width : 18rem;">
+            
+            <div class="card" style="width : 13rem;">
                 <div class="card-body">
-                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="card-img-top">
-                    <h5 class="card-title">Luxury Sofa</h5>
-                    <p class="card-text">$600.00</p>
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
                 </div>
             </div>
-            <!-- ------------------------------- card-6 -------------------------------- -->
-            <div class="card" style="width: 18rem; ">
+            <div class="card" style="width : 13rem;">
                 <div class="card-body">
-                    <img src="./public/img/products_mini/product-modern-sofa.jpg" class="card-img-top">
-                    <h5 class="card-title">Modern Sofa</h5>
-                    <p class="card-text">$600.00</p>
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
                 </div>
             </div>
-            <!-- ------------------------------- card-7 -------------------------------- -->
-            <div class="card" style="width : 18rem;">
+            <div class="card" style="width : 13rem;">
                 <div class="card-body">
-                    <img src="./public/img/products_mini/product-plates.jpg" class="card-img-top">
-                    <h5 class="card-title">Product Plates</h5>
-                    <p class="card-text">$600.00</p>
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-tshitr.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width : 13rem;">
+                <div class="card-body">
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-plates.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width : 13rem;">
+                <div class="card-body">
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-shoes.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width : 13rem;">
+                <div class="card-body">
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-plates.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width : 13rem;">
+                <div class="card-body">
+                    <div class="item">
+                        <img src="./public/img/products_mini/product-shoes.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
-                <i></i>
-                <h5>Lorem ipsum dolor sit amet.</h5>
+        <!-- ------------------------------- card-1 -------------------------------- -->
+        <!-- <div class="item">
+                <div class="card" style="width : 15rem;">
+                    <div class="card-body">
+                        <img src="./public/img/products_mini/product-bag.jpg" class="card-img-top">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div> 
+            </div> -->
+        <!-- ------------------------------- card-2 -------------------------------- -->
+        <!-- <div class="item">
+                <div class="card" style="width : 15rem;">
+                    <div class="card-body">
+                        <img src="./public/img/products_mini/product-bed.jpg" class="card-img-top">
+                        <h5 class="card-title">Bed Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div> 
+            </div> -->
+        <!-- ------------------------------- card-3 -------------------------------- -->
+        <!-- <div class="item">
+                <div class="card" style="width : 15rem;">
+                    <div class="card-body">
+                        <img src="./public/img/products_mini/product-cups.jpg" class="card-img-top">
+                        <h5 class="card-title">Product Cups</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div> 
+            </div> -->
+        <!-- ------------------------------- card-4 -------------------------------- -->
+        <!-- <div class="item">
+                <div class="card" style="width : 15rem;">
+                    <div class="card-body">
+                        <img src="./public/img/products_mini/product-gloves.jpg" class="card-img-top">
+                        <h5 class="card-title">Product Gloves</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div>
+            </div> -->
+        <!-- ------------------------------- card-5 -------------------------------- -->
+        <!-- <div class="item">
+                <div class="card" style="width : 15rem;">
+                    <div class="card-body">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="card-img-top">
+                        <h5 class="card-title">Luxury Sofa</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div> 
+            </div> -->
+        <!-- ------------------------------- card-6 -------------------------------- -->
+        <!-- <div class="item">
+                <div class="card" style="width: 15rem; ">
+                    <div class="card-body">
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg" class="card-img-top">
+                        <h5 class="card-title">Modern Sofa</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div>
+            </div> -->
+        <!-- ------------------------------- card-7 -------------------------------- -->
+        <!-- <dic class="item">
+                <div class="card" style="width : 15rem;">
+                    <div class="card-body">
+                        <img src="./public/img/products_mini/product-plates.jpg" class="card-img-top">
+                        <h5 class="card-title">Product Plates</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div>
+            </dic> -->
+
+
+
+        </div>
+        <div class="customers">
+            <div class="grey">
+                <i class="far fa-check-circle"></i>
+                <h5>TRUSTED BY 10.000+ CUSTOMERS</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facere earum reiciendis, magni
-                    laborum inventore.</p>
+                    laborum fdssd.</p>
                 <button>LEARN MORE</button>
             </div>
-            <div>
-                <i></i>
-                <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="red">
+                <i class="fas fa-paper-plane"></i>
+                <h5>VERY FAST SHIPING</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facere earum reiciendis, magni
-                    laborum inventore.</p>
+                    laborum fdssd.</p>
                 <button>LEARN MORE</button>
             </div>
-            <div>
-                <i></i>
-                <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="grey">
+                <i class="far fa-check-circle"></i>
+                <h5>TRUSTED BY 10.000+ CUSTOMERS</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facere earum reiciendis, magni
-                    laborum inventore.</p>
+                    laborum fdssd.</p>
                 <button>LEARN MORE</button>
             </div>
         </div>
 
     </section>
-    <footer>
-        <div>
+    <footer class="blur">
+        <div class="aboutUs">
             <div>
                 <h5>ABOUT US</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit!</p>
@@ -283,8 +432,9 @@
                     <li><a href="">> Hello World</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="aTags">
                 <h5>ABOUT US</h5>
+                <div class="myA">
                 <a href="#">buisness</a>
                 <a href="#">confidence</a>
                 <a href="#">gadgets</a>
@@ -295,17 +445,43 @@
                 <a href="#">trips</a>
                 <a href="#">works</a>
                 <a href="#">work pace</a>
+                </div>
             </div>
         </div>
-        <div>
-            <p>COPYRIGHT 2020 GOODLAYERS? ALL RIGHT RESERVED</p>
+        <div class="copyright">
+            <p>COPYRIGHT 2020 GOODLAYERS. ALL RIGHT RESERVED</p>
         </div>
     </footer>
 
-    <script src="./public/java/main.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>

@@ -16850,88 +16850,103 @@ textarea.form-control-lg {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
-header {
+body {
+  width: 95rem;
+}
+body .noblur {
+  position: fixed;
+  bottom: 50%;
+  right: 30%;
+  top: 30%;
+  height: 25rem;
+  width: 35rem;
+  background-color: #ce2121;
+  box-sizing: border-box;
+}
+body header {
   display: block;
   justify-content: center;
   width: 100%;
 }
-header nav {
+body header .formulaire {
+  display: none;
+}
+body header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-header nav img {
+body header nav img {
   padding-top: 3rem;
 }
-header nav .menu {
+body header nav .menu {
   display: flex;
   justify-content: center;
   padding: 3rem;
   width: 100%;
 }
-header nav .menu ul {
+body header nav .menu ul {
   display: flex;
   list-style: none;
   align-items: center;
   margin: 0;
   padding: 0;
 }
-header nav .menu ul li {
+body header nav .menu ul li {
   width: 6rem;
   align-items: center;
 }
-header nav .menu ul li a {
+body header nav .menu ul li a {
   color: black;
   text-decoration: none;
 }
-header nav .menu .menu-boutons {
+body header nav .menu .menu-boutons {
   display: flex;
   justify-content: space-evenly;
   width: 10%;
 }
-header nav .menu .menu-boutons .light-mode {
+body header nav .menu .menu-boutons .light-mode {
   height: 1.5rem;
   width: 1.5rem;
   background-color: white;
   border: gray solid 1px;
   border-radius: 5px;
 }
-header nav .menu .menu-boutons .night-mode {
+body header nav .menu .menu-boutons .night-mode {
   height: 1.5rem;
   width: 1.5rem;
   background-color: black;
   border: gray solid 1px;
   border-radius: 5px;
 }
-header nav .menu .menu-boutons .conection-formulaire {
+body header nav .menu .menu-boutons .conection-formulaire {
   border: none;
   background-color: grey;
   color: white;
 }
-header .global-shopAtSec {
+body header .global-shopAtSec {
   background-color: #F3F3F3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .global-shopAtSec .divTextContent {
+body header .global-shopAtSec .divTextContent {
   width: 50%;
 }
-header .global-shopAtSec .divTextContent img {
+body header .global-shopAtSec .divTextContent img {
   height: 7rem;
   width: 30rem;
 }
-header .global-shopAtSec .divTextContent h1, header .global-shopAtSec .divTextContent .h1 {
+body header .global-shopAtSec .divTextContent h1, body header .global-shopAtSec .divTextContent .h1 {
   color: red;
 }
-header .global-shopAtSec .divTextContent p {
+body header .global-shopAtSec .divTextContent p {
   width: 100%;
   font-size: smaller;
 }
-header .global-shopAtSec .divTextContent button {
+body header .global-shopAtSec .divTextContent button {
   height: 2.5rem;
   width: 8rem;
   background-color: #DD4545;
@@ -16939,10 +16954,10 @@ header .global-shopAtSec .divTextContent button {
   border-radius: 25px;
   color: white;
 }
-header .global-shopAtSec .divImg {
+body header .global-shopAtSec .divImg {
   width: 30%;
 }
-header .global-shopAtSec .divImg img {
+body header .global-shopAtSec .divImg img {
   width: 90%;
 }
 
@@ -16973,7 +16988,7 @@ section .services .livingRoom {
   background-image: url(../img/services/service-1.jpg);
 }
 section .services .livingRoom .titleUnderline {
-  height: 0.2rem;
+  height: 0.12rem;
   width: 70%;
   background-color: white;
 }
@@ -16989,7 +17004,7 @@ section .services .saleItems {
   background-image: url(../img/services/service-2.jpg);
 }
 section .services .saleItems .titleUnderline {
-  height: 0.2rem;
+  height: 0.12rem;
   width: 70%;
   background-color: white;
 }
@@ -17005,9 +17020,13 @@ section .services .clothes {
   background-image: url(../img/services/slider-3.jpg);
 }
 section .services .clothes .titleUnderline {
-  height: 0.2rem;
+  height: 0.12rem;
   width: 70%;
   background-color: white;
+}
+section .rp {
+  padding: 5rem;
+  color: #333;
 }
 section .recentProducts {
   display: grid;
@@ -17017,13 +17036,204 @@ section .recentProducts div.card {
   border: none;
 }
 section .recentProducts div.card .card-body {
+  display: flex;
+  flex-direction: column;
   border: none;
+  text-align: center;
+}
+section .recentProducts div.card .card-body h5, section .recentProducts div.card .card-body .h5 {
+  text-decoration: black;
+  font-size: 1rem;
+}
+section .recentProducts div.card .card-body p {
+  color: red;
+  font-weight: bold;
+}
+section .recentProducts div.card .card-bodyS {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1rem;
+}
+section .recentProducts div.card .card-bodyS button {
+  color: white;
+  background-color: red;
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50px;
+}
+section .recentProducts div.card .card-bodyS h5, section .recentProducts div.card .card-bodyS .h5 {
+  font-size: medium;
+}
+section .recentProducts div.card .card-bodyS p {
+  color: red;
+}
+section .recentProducts div.card .card-bodyS p span {
+  font-weight: bold;
+  color: black;
+  text-decoration: line-through;
 }
 section .recentProducts .crd-tshirt img {
   height: 14.3rem;
 }
 section .recentProducts .crd-shoe img {
   height: 14.3rem;
+}
+
+.section2 {
+  padding-top: 5rem;
+}
+.section2 .discover {
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/cta-bg.jpg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section2 .discover h1, .section2 .discover .h1 {
+  padding-bottom: 2.5rem;
+}
+.section2 .discover button {
+  height: 2.5rem;
+  width: 8rem;
+  background-color: #DD4545;
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+.section2 h4, .section2 .h4 {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.section2 .owl-carousel {
+  height: 60vh;
+  width: 43rem;
+  padding-bottom: 20rem;
+}
+.section2 .owl-carousel .card {
+  border: none;
+}
+.section2 .customers {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section2 .customers div {
+  height: 20rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section2 .customers div.grey {
+  background-color: #F3F2F3;
+}
+.section2 .customers div.grey i {
+  font-size: x-large;
+}
+.section2 .customers div.grey button {
+  height: 2.3rem;
+  width: 7rem;
+  color: white;
+  background-color: #343A40;
+  font-size: 15px;
+  border-radius: 0.4rem;
+}
+.section2 .customers div.grey p {
+  width: 80%;
+}
+.section2 .customers div.red {
+  background-color: #DD4545;
+}
+.section2 .customers div.red button {
+  height: 2.3rem;
+  width: 7rem;
+  background-color: #fff;
+  border: none;
+  font-size: 15px;
+  border-radius: 0.4rem;
+}
+.section2 .customers div.red i {
+  color: white;
+  font-size: x-large;
+}
+.section2 .customers div.red h5, .section2 .customers div.red .h5 {
+  color: white;
+}
+.section2 .customers div.red p {
+  color: white;
+  width: 80%;
+}
+
+footer {
+  margin-top: 4rem;
+}
+footer .aboutUs {
+  height: 15rem;
+  background-color: #343A40;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .aboutUs div {
+  height: 10rem;
+  width: 20%;
+}
+footer .aboutUs div p {
+  margin: 0;
+  font-size: small;
+  color: #6a7076;
+}
+footer .aboutUs div h5, footer .aboutUs div .h5 {
+  color: #F3F3F3;
+  font-size: x-small;
+  font-weight: normal;
+  padding-bottom: 1rem;
+}
+footer .aboutUs div ul {
+  padding: 0;
+}
+footer .aboutUs div ul li {
+  text-align: start;
+  list-style: none;
+}
+footer .aboutUs div ul li a {
+  color: #F3F3F3;
+  text-decoration: none;
+  font-size: small;
+}
+footer .aboutUs div.aTags .myA {
+  display: grid;
+  grid-template-columns: 90px 90px 100px;
+}
+footer .aboutUs div.aTags .myA a {
+  margin: 0.1rem;
+  height: 1.6rem;
+  font-size: small;
+  font-weight: lighter;
+  text-align: center;
+  color: #6a7076;
+  text-decoration: none;
+  border: #6a7076 solid 1px;
+  border-radius: 0.3rem;
+}
+footer .copyright {
+  height: 3rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6a7076;
+}
+footer .copyright p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
