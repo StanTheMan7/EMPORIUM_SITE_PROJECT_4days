@@ -17,20 +17,76 @@
 
 <body>
     <header class="blur">
+        <div class="con1con2">
+            <!-- ----------------------------------------------------------------------- -->
+            <!--!                         premiere page connexion                         -->
+            <!-- ----------------------------------------------------------------------- -->
+            <div class="conexion ">
+                <div class="divExit">
+                    <img src="./public/img/logo.png" alt="">
+                    <button class="exitButton">x</button>
+                </div>
+                <div class="conexionInscription">
+                    <button>Connexion</button>
+                    <button>Inscription</button>
+                </div>
+                <div class="labelsInputs">
+                    <label for="">Votre adresse email</label>
+                    <input type="mail" placeholder="abced@gmail.com" id="">
+                    <p>We'll never share your email with anyone else</p>
+                    <label for="">Mot de passe</label>
+                    <input type="password" placeholder="********">
+                    <div class="checkBox">
+                        <label for="">Check me out</label>
+                        <input type="checkbox">
+                    </div>
+                    <button>Submit</button>
+                </div>
+                <div class="formIcons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-snapchat-ghost"></i>
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------------------- -->
+            <!--!                         deuxieme page connexion                         -->
+            <!-- ----------------------------------------------------------------------- -->
+            <div class="conexion2 ">
+                <div class="divExit">
+                    <img src="./public/img/logo.png" alt="">
+                    <button class="exitButton">x</button>
+                </div>
+                <div class="conexionInscription">
+                    <button class="connexionBtn">Connexion</button>
+                    <button class="inscriptionBtn">Inscription</button>
+                </div>
+                <div class="labelsInputs">
+                    <label for="">Votre adresse email</label>
+                    <input type="mail" placeholder="abced@gmail.com" id="">
+                    <label for="">Mot de passe</label>
+                    <input type="password" placeholder="********">
+                    <label for="">Confirme votre mot de passe</label>
+                    <input type="password" placeholder="********">
 
-        <div class="formulaire">
-            <div></div>
-            <img src="./public/img/logo.png" alt="">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <label for="">E-mail adresse</label>
-            <input type="text">
-            <input type="text">
-            <input type="text">
+                    <div>
+                        <label for=""> <input type="checkbox">  Homme</label>
+                        <label for=""> <input type="checkbox">  Famme</label>
+                    </div>
+                    <button>Submit</button>
+                </div>
+                <div class="formIcons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-snapchat-ghost"></i>
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
         </div>
         <!-- ----------------------------------------------------------------------- -->
         <!--!                                MA navBar                                -->
         <!-- ----------------------------------------------------------------------- -->
-        <nav >
+        <nav>
             <!-- todo  LOGO qui doit disparetre quand je srcoll down -->
 
             <div class="logo">
@@ -144,7 +200,7 @@
                     <button>sale!</button>
                     <div>
                         <h5 class="card-title">Womens Bag</h5>
-                        <p><span>$420.00</span>    $350.00</p>
+                        <p><span>$420.00</span> $350.00</p>
                     </div>
                 </div>
             </div>
@@ -251,7 +307,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
@@ -435,16 +491,16 @@
             <div class="aTags">
                 <h5>ABOUT US</h5>
                 <div class="myA">
-                <a href="#">buisness</a>
-                <a href="#">confidence</a>
-                <a href="#">gadgets</a>
-                <a href="#">identity</a>
-                <a href="#">logo</a>
-                <a href="#">photography</a>
-                <a href="#">time</a>
-                <a href="#">trips</a>
-                <a href="#">works</a>
-                <a href="#">work pace</a>
+                    <a href="#">buisness</a>
+                    <a href="#">confidence</a>
+                    <a href="#">gadgets</a>
+                    <a href="#">identity</a>
+                    <a href="#">logo</a>
+                    <a href="#">photography</a>
+                    <a href="#">time</a>
+                    <a href="#">trips</a>
+                    <a href="#">works</a>
+                    <a href="#">work pace</a>
                 </div>
             </div>
         </div>
@@ -465,7 +521,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
-            loop:true,
+            loop: true,
             margin: 10,
             nav: false,
             responsive: {

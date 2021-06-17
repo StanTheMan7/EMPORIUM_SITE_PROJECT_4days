@@ -16869,9 +16869,139 @@ body header {
   display: block;
   justify-content: center;
   width: 100%;
+  z-index: 0;
 }
-body header .formulaire {
+body header .con1con2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header .con1con2 .conexion {
+  position: fixed;
+  top: 30%;
+  background: white;
   display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  height: 28rem;
+}
+body header .con1con2 .conexion .divExit {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+body header .con1con2 .conexion .divExit .exitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  width: 1.6rem;
+  border-radius: 0.3rem;
+  background-color: #DD4545;
+}
+body header .con1con2 .conexion .conexionInscription button {
+  border-radius: 0.3rem;
+  background-color: #DD4545;
+  font-size: small;
+  height: 2rem;
+  width: 5rem;
+  margin: 0.1rem;
+  border: none;
+}
+body header .con1con2 .conexion .labelsInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+body header .con1con2 .conexion .labelsInputs button {
+  background-color: #3232fc;
+  border: none;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+}
+body header .con1con2 .conexion .formIcons {
+  margin: 1.5rem;
+  height: 2rem;
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+}
+body header .con1con2 .conexion .formIcons .fa-facebook-square {
+  color: #3232fc;
+}
+body header .con1con2 .conexion .formIcons .fa-snapchat-ghost {
+  color: yellow;
+}
+body header .con1con2 .conexion2 {
+  position: fixed;
+  top: 30%;
+  right: 30%;
+  width: 35%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 35%;
+}
+body header .con1con2 .conexion2 .divExit {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+body header .con1con2 .conexion2 .divExit .exitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  width: 1.6rem;
+  border-radius: 0.3rem;
+  background-color: #DD4545;
+}
+body header .con1con2 .conexion2 .conexionInscription button {
+  border-radius: 0.3rem;
+  background-color: #DD4545;
+  font-size: small;
+  height: 2rem;
+  width: 5rem;
+  margin: 0.1rem;
+  border: none;
+}
+body header .con1con2 .conexion2 .labelsInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+body header .con1con2 .conexion2 .labelsInputs button {
+  background-color: #3232fc;
+  border: none;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 0.3rem;
+  margin-top: 3rem;
+}
+body header .con1con2 .conexion2 .labelsInputs div {
+  display: flex;
+  flex-direction: column;
+}
+body header .con1con2 .conexion2 .formIcons {
+  margin: 1.5rem;
+  height: 2rem;
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+}
+body header .con1con2 .conexion2 .formIcons .fa-facebook-square {
+  color: #3232fc;
+}
+body header .con1con2 .conexion2 .formIcons .fa-snapchat-ghost {
+  color: yellow;
 }
 body header nav {
   display: flex;
@@ -17031,6 +17161,7 @@ section .rp {
 section .recentProducts {
   display: grid;
   grid-template-columns: 35% 35% 40%;
+  z-index: -1;
 }
 section .recentProducts div.card {
   border: none;
@@ -17116,6 +17247,7 @@ section .recentProducts .crd-shoe img {
   height: 60vh;
   width: 43rem;
   padding-bottom: 20rem;
+  z-index: -1;
 }
 .section2 .owl-carousel .card {
   border: none;

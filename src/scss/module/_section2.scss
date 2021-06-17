@@ -1,6 +1,6 @@
 .section2{
     padding-top: 5rem;
-
+    
     .discover{
         height: 40rem;
         width: 100%;
@@ -32,7 +32,8 @@
     .owl-carousel{
         height: 60vh;
         width: 43rem;
-        padding-bottom: 20rem;       
+        padding-bottom: 20rem;   
+        z-index: -1;    
         .card{
             border: none;
         }
