@@ -16878,8 +16878,8 @@ body header .logo {
   align-items: center;
 }
 body header .logo img.inverted {
-  padding: 0;
-  margin: 4rem;
+  padding-bottom: 4rem;
+  padding-top: 0;
 }
 body header nav.scroll {
   flex-direction: row;
@@ -17031,12 +17031,14 @@ body header nav img {
 body header nav .menu {
   display: flex;
   justify-content: center;
-  padding: 3rem;
-  width: 100%;
+  padding-bottom: 3.5rem;
+  width: 73%;
 }
 body header nav .menu ul {
   display: flex;
   list-style: none;
+  font-size: large;
+  font-weight: bold;
   align-items: center;
   margin: 0;
   padding: 0;
