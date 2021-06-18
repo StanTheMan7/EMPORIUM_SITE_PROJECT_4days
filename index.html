@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <header class="blur">
-        <div class="con1con2">
+    <header class="blur inverted ">
+        <div class="con1con2 ">
             <!-- ----------------------------------------------------------------------- -->
             <!--!                         premiere page connexion                         -->
             <!-- ----------------------------------------------------------------------- -->
@@ -30,7 +30,7 @@
                     <button>Connexion</button>
                     <button>Inscription</button>
                 </div>
-                <div class="labelsInputs">
+                <div class="labelsInputs">'.light'
                     <label for="">Votre adresse email</label>
                     <input type="mail" placeholder="abced@gmail.com" id="">
                     <p>We'll never share your email with anyone else</p>
@@ -53,7 +53,7 @@
             <!--!                         deuxieme page connexion                         -->
             <!-- ----------------------------------------------------------------------- -->
             <div class="conexion2 ">
-                <div class="divExit">
+                <div class="divExit ">
                     <img src="./public/img/logo.png" alt="">
                     <button class="exitButton">x</button>
                 </div>
@@ -70,8 +70,8 @@
                     <input type="password" placeholder="********">
 
                     <div>
-                        <label for=""> <input type="checkbox">  Homme</label>
-                        <label for=""> <input type="checkbox">  Famme</label>
+                        <label for=""> <input type="checkbox"> Homme</label>
+                        <label for=""> <input type="checkbox"> Famme</label>
                     </div>
                     <button>Submit</button>
                 </div>
@@ -86,17 +86,17 @@
         <!-- ----------------------------------------------------------------------- -->
         <!--!                                MA navBar                                -->
         <!-- ----------------------------------------------------------------------- -->
-        <nav>
+        <nav class="inverted scroll">
             <!-- todo  LOGO qui doit disparetre quand je srcoll down -->
 
-            <div class="logo">
-                <img src="./public/img/logo.png" alt="">
+            <div class="logo ">
+                <img class="inverted" src="./public/img/logo.png" alt="">
             </div>
 
             <!-- ? ------------------------------ mon menu ------------------------------- -->
             <!-- todo le metre en display flex enleve le style -->
 
-            <div class="menu">
+            <div class="menu inverted">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Product</a></li>
@@ -120,7 +120,7 @@
             </div>
         </nav>
 
-        <div class="global-shopAtSec">
+        <div class="global-shopAtSec inverted">
             <div class="divTextContent">
                 <h1>Shop at</h1>
                 <img src="./public/img/logo.png" alt="">
@@ -136,8 +136,12 @@
     </header>
 
 
-    <section class="blur">
+    <section class="blur inverted">
         <div class="services">
+
+
+
+
 
             <div class="livingRoom">
                 <h3>Living Room</h3>
@@ -160,9 +164,19 @@
         <!-- card-1 -->
 
         <h3 class="rp">Recent Products</h3>
-        <div class="recentProducts">
-            <div class="card" style="width: 18rem;">
-                <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="card-img-top" alt="...">
+
+        <div class="recentProducts ">
+            <div class="card img1" style="width: 18rem;">
+                <img class="inverted" src="./public/img/products_mini/product-luxry-sofa.jpg" class="card-img-top"
+                    alt="...">
+                <div id="hover1" >
+                    <div class="black">
+                        <i class="far fa-eye">View details</i>
+                    </div>
+                    <div class="red">
+                        <i class="fas fa-shopping-cart">Add to card</i>
+                    </div>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Luxury Sofa</h5>
                     <p>$600.00</p>
@@ -171,8 +185,17 @@
 
             <!-- card-2 -->
 
-            <div class="card" style="width: 18rem;">
-                <img src="./public/img/products_mini/product-gloves.jpg" class="card-img-top" alt="...">
+            <div class="card img1" style="width: 18rem;">
+                <img class="inverted" src="./public/img/products_mini/product-gloves.jpg" class="card-img-top"
+                    alt="...">
+                    <div id="hover1" >
+                        <div class="black">
+                            <i class="far fa-eye">View details</i>
+                        </div>
+                        <div class="red">
+                            <i class="fas fa-shopping-cart">Add to card</i>
+                        </div>
+                    </div>
                 <div class="card-bodyS">
                     <button>sale!</button>
                     <div>
@@ -184,8 +207,16 @@
 
             <!-- card-3. -->
 
-            <div class="card" style="width: 18rem;">
-                <img src="./public/img/products_mini/product-cups.jpg" class="card-img-top" alt="...">
+            <div class="card img1" style="width: 18rem;">
+                <img class="inverted" src="./public/img/products_mini/product-cups.jpg" class="card-img-top" alt="...">
+                <div id="hover1" >
+                    <div class="black">
+                        <i class="far fa-eye">View details</i>
+                    </div>
+                    <div class="red">
+                        <i class="fas fa-shopping-cart">Add to card</i>
+                    </div>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Colorful Bowl</h5>
                     <p>$18.00</p>
@@ -194,8 +225,17 @@
 
             <!-- card-4 -->
 
-            <div class="card" style="width: 18rem;">
-                <img src="./public/img/products/product-bag-700x500.jpg" class="card-img-top" alt="...">
+            <div class="card img1" style="width: 18rem;">
+                <img class="inverted" src="./public/img/products/product-bag-700x500.jpg" class="card-img-top"
+                    alt="...">
+                    <div id="hover1" >
+                        <div class="black">
+                            <i class="far fa-eye">View details</i>
+                        </div>
+                        <div class="red">
+                            <i class="fas fa-shopping-cart">Add to card</i>
+                        </div>
+                    </div>
                 <div class="card-bodyS">
                     <button>sale!</button>
                     <div>
@@ -207,8 +247,17 @@
 
             <!-- card-5 -->
 
-            <div class="card crd-tshirt" style="width: 18rem;">
-                <img src="./public/img/products/product-tshitr-700x500.jpg" class="card-img-top" alt="...">
+            <div class="card crd-tshirt img1 " style="width: 18rem;">
+                <img class="inverted " src="./public/img/products/product-tshitr-700x500.jpg" class="card-img-top"
+                    alt="...">
+                    <div id="hover1" >
+                        <div class="black">
+                            <i class="far fa-eye">View details</i>
+                        </div>
+                        <div class="red">
+                            <i class="fas fa-shopping-cart">Add to card</i>
+                        </div>
+                    </div>
                 <div class="card-body">
                     <h5 class="card-title">Minimal T-Shirt</h5>
                     <p>$15.00</p>
@@ -217,8 +266,17 @@
 
             <!-- card-6 -->
 
-            <div class="card" style="width: 18rem;">
-                <img src="./public/img/products_mini/product-plates.jpg" class="card-img-top" alt="...">
+            <div class="card img1" style="width: 18rem;">
+                <img class="inverted" src="./public/img/products_mini/product-plates.jpg" class="card-img-top"
+                    alt="...">
+                    <div id="hover1" >
+                        <div class="black">
+                            <i class="far fa-eye">View details</i>
+                        </div>
+                        <div class="red">
+                            <i class="fas fa-shopping-cart">Add to card</i>
+                        </div>
+                    </div>
                 <div class="card-body">
                     <h5 class="card-title">Plates Set</h5>
                     <p>$30.00</p>
@@ -227,8 +285,17 @@
 
             <!-- card-7 -->
 
-            <div class="card" style="width: 18rem;">
-                <img src="./public/img/products_mini/product-modern-sofa.jpg" class="card-img-top" alt="...">
+            <div class="card img1" style="width: 18rem;">
+                <img class="inverted" src="./public/img/products_mini/product-modern-sofa.jpg" class="card-img-top"
+                    alt="...">
+                    <div id="hover1" >
+                        <div class="black">
+                            <i class="far fa-eye">View details</i>
+                        </div>
+                        <div class="red">
+                            <i class="fas fa-shopping-cart">Add to card</i>
+                        </div>
+                    </div>
                 <div class="card-body">
                     <h5 class="card-title">Modern Sofa</h5>
                     <p>$900.00</p>
@@ -237,8 +304,16 @@
 
             <!-- card-8 -->
 
-            <div class="card" style="width: 18rem;">
-                <img src="./public/img/products_mini/product-bed.jpg" class="card-img-top" alt="...">
+            <div class="card img1" style="width: 18rem;">
+                <img class="inverted" src="./public/img/products_mini/product-bed.jpg" class="card-img-top" alt="...">
+                <div id="hover1" >
+                    <div class="black">
+                        <i class="far fa-eye">View details</i>
+                    </div>
+                    <div class="red">
+                        <i class="fas fa-shopping-cart">Add to card</i>
+                    </div>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Bed Lines</h5>
                     <p>$79.00</p>
@@ -247,8 +322,17 @@
 
             <!-- card-9 -->
 
-            <div class="card crd-shoe" style="width: 18rem;">
-                <img src="./public/img/products/product-shoes-700x500.jpg" class="card-img-top" alt="...">
+            <div class="card img1 crd-shoe" style="width: 18rem;">
+                <img class="inverted" src="./public/img/products/product-shoes-700x500.jpg" class="card-img-top"
+                    alt="...">
+                     <div id="hover1" >
+                    <div class="black">
+                        <i class="far fa-eye">View details</i>
+                    </div>
+                    <div class="red">
+                        <i class="fas fa-shopping-cart">Add to card</i>
+                    </div>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Minimal Shoes</h5>
                     <p>$60.00</p>
@@ -256,7 +340,7 @@
             </div>
         </div>
     </section>
-    <section class="section2 blur">
+    <section class="section2 blur inverted">
 
         <div class="discover">
             <h1>Discover Thousands Of Great Products</h1>
@@ -266,22 +350,12 @@
 
         <h4>Hot Fashion Products</h4>
 
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel owl-theme ">
 
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-bag.jpg">
-                        <h5 class="card-title">Bag Product</h5>
-                        <p class="card-text">$600.00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width : 13rem;">
-                <div class="card-body">
-                    <div class="item">
-                        <img src="./public/img/products_mini/product-bed.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-bag.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -291,7 +365,7 @@
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-cups.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-bed.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -301,7 +375,7 @@
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-gloves.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-cups.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -311,7 +385,17 @@
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-luxry-sofa.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-gloves.jpg">
+                        <h5 class="card-title">Bag Product</h5>
+                        <p class="card-text">$600.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width : 13rem;">
+                <div class="card-body">
+                    <div class="item">
+                        <img class="inverted" src="./public/img/products_mini/product-luxry-sofa.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -320,7 +404,7 @@
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-modern-sofa.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-modern-sofa.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -329,7 +413,7 @@
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-tshitr.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-tshitr.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -338,7 +422,7 @@
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-plates.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-plates.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -347,7 +431,7 @@
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-shoes.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-shoes.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -356,7 +440,7 @@
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-plates.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-plates.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -365,7 +449,7 @@
             <div class="card" style="width : 13rem;">
                 <div class="card-body">
                     <div class="item">
-                        <img src="./public/img/products_mini/product-shoes.jpg">
+                        <img class="inverted" src="./public/img/products_mini/product-shoes.jpg">
                         <h5 class="card-title">Bag Product</h5>
                         <p class="card-text">$600.00</p>
                     </div>
@@ -471,8 +555,8 @@
         </div>
 
     </section>
-    <footer class="blur">
-        <div class="aboutUs">
+    <footer class="blur inverted">
+        <div class="aboutUs ">
             <div>
                 <h5>ABOUT US</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit!</p>
@@ -504,12 +588,12 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">
+        <div class="copyright inverted">
             <p>COPYRIGHT 2020 GOODLAYERS. ALL RIGHT RESERVED</p>
         </div>
     </footer>
 
-    <script src="./src/js/main.js"></script>
+    <script src="./src/js/main.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -520,6 +604,9 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">
+
+
+
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,

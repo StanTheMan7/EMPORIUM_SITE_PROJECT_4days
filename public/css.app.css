@@ -16868,24 +16868,9 @@ body .noblur {
 body header {
   display: block;
   justify-content: center;
-  align-items: center;
   width: 100%;
   z-index: 0;
   background-color: white;
-}
-body header .logo {
-  display: flex;
-  align-items: center;
-}
-body header .logo img.inverted {
-  padding: 0;
-  margin: 4rem;
-}
-body header nav.scroll {
-  flex-direction: row;
-  align-items: center;
-  position: sticky;
-  top: 0;
 }
 body header .con1con2 {
   display: flex;
@@ -17183,41 +17168,20 @@ section .services .clothes .titleUnderline {
 section .rp {
   padding: 5rem;
   color: #333;
+  background-color: red;
 }
 section .recentProducts {
   display: grid;
   grid-template-columns: 35% 35% 40%;
   z-index: 0;
+  background-color: red;
 }
 section .recentProducts .card {
   border: none;
-  position: relative;
-}
-section .recentProducts .card #hover1 {
-  height: 0;
-  overflow: hidden;
-  transition: 1s;
-  position: absolute;
-  bottom: 30%;
-  display: flex;
-  width: 100%;
-  color: white;
-  font-size: small;
-  opacity: 0.8;
-}
-section .recentProducts .card #hover1 .black {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: red;
-  width: 50%;
 }
-section .recentProducts .card #hover1 .red {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  width: 50%;
+section .recentProducts .card .card:nth-child(2) {
+  background-color: red;
 }
 section .recentProducts .card .card-body {
   display: flex;
@@ -17422,4 +17386,4 @@ footer .copyright p {
   margin: 0;
 }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=css.app.css.map */

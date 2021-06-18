@@ -1,5 +1,6 @@
 .section2{
     padding-top: 5rem;
+    padding-bottom: 5rem;
     
     .discover{
         height: 40rem;
@@ -33,7 +34,7 @@
         height: 60vh;
         width: 43rem;
         padding-bottom: 20rem;   
-        z-index: -1;    
+        z-index: 0;    
         .card{
             border: none;
         }
