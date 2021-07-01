@@ -15,15 +15,14 @@ import{
     
 } from './sibling.js'
 
-btnExitInsc.addEventListener('click', () =>{
+document.body.addEventListener('click',(e)=>{
+    if(e.target.className == "exitButton"){
         formulaire1.style.display ='none'
         formulaire2.style.display ='none'
-});
+    }
 
-btnExit.addEventListener('click', () => {
-    formulaire1.style.display ='none'
-    formulaire2.style.display ='none'
 })
+
 btnConection.addEventListener('click', ()=>{
     formulaire1.classList.toggle('noblur')
     formulaire1.style.display ='flex'
